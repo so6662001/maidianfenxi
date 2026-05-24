@@ -10,6 +10,7 @@
 - [01 - 中台愿景与定位](./00-overview/01-vision.md)
 - [02 - 决策操作系统范式](./00-overview/02-paradigm.md)
 - [03 - 产品路线图](./00-overview/03-roadmap.md)
+- [04 - 新人入职手册](./00-overview/04-onboarding.md)
 
 ### 01 · 需求规约
 - [01 - 业务背景与目标](./01-requirements/01-business-context.md)
@@ -23,6 +24,8 @@
 - [03 - 微服务模块划分](./02-architecture/03-service-modules.md)
 - [04 - 数据流架构](./02-architecture/04-data-flow.md)
 - [05 - 对外集成模式](./02-architecture/05-integration-patterns.md)
+- [06 - 术语表与词汇表](./02-architecture/06-glossary.md)
+- [07 - 错误码字典](./02-architecture/07-error-codes.md)
 
 ### 03 · 业务模型与数据
 - [01 - SaaS LCM 模型](./03-data-models/01-saas-lcm-model.md)
@@ -31,6 +34,8 @@
 - [04 - 指标字典（60 指标）](./03-data-models/04-metrics-dictionary.md)
 - [05 - 指标 SQL/DSL 实现](./03-data-models/05-metrics-sql.md)
 - [06 - 数据 Schema 设计](./03-data-models/06-data-schema.md)
+- [07 - 埋点规范与标准事件清单](./03-data-models/07-event-tracking-spec.md)
+- [08 - 数据治理详细方案](./03-data-models/08-data-governance.md)
 
 ### 04 · 看板设计
 - [01 - S-1 产品组合矩阵](./04-dashboards/01-s1-product-portfolio.md)
@@ -60,6 +65,7 @@
 - [01 - 助理产品架构](./07-ai-assistant/01-assistant-architecture.md)
 - [02 - 30 个高频对话场景](./07-ai-assistant/02-conversation-scenarios.md)
 - [03 - 智能洞察引擎](./07-ai-assistant/03-intelligent-insight-engine.md)
+- [04 - AI 模型治理](./07-ai-assistant/04-model-governance.md)
 
 ### 08 · 决策追溯库
 - [01 - 决策追溯库概览](./08-decision-traceability/01-decision-library-overview.md)
@@ -85,10 +91,27 @@
 
 ### 13 · OKR 与治理
 - [01 - 中台 OKR 与成熟度模型](./13-okr-governance/01-middle-platform-okr.md)
+- [02 - 变更管理流程](./13-okr-governance/02-change-management.md)
+- [03 - 成本管理](./13-okr-governance/03-cost-management.md)
+
+### 14 · 运维（生产部署与日常运维）
+- [01 - 部署指南](./14-operations/01-deployment-guide.md)
+- [02 - 监控与告警](./14-operations/02-monitoring-alerting.md)
+- [03 - 故障排查 Runbook](./14-operations/03-troubleshooting.md)
+- [04 - SLO/SLI/Error Budget](./14-operations/04-slo-sli.md)
+- [05 - 灾备方案（DR/BCP）](./14-operations/05-disaster-recovery.md)
+
+### 15 · 质量保证
+- [01 - 测试策略总览](./15-quality-assurance/01-testing-strategy.md)
+- [02 - 性能优化指南](./15-quality-assurance/02-performance-optimization.md)
+- [03 - 混沌工程方案](./15-quality-assurance/03-chaos-engineering.md)
 
 ### 🤖 AI 开发提示词
 - [开发提示词导航与使用指南](./prompts/README.md)
 - 20 份子模块开发提示词位于 [`prompts/`](./prompts/) 目录
+
+### 📋 项目协作
+- [CONTRIBUTING.md](../CONTRIBUTING.md) · 贡献指南
 
 ---
 
@@ -99,11 +122,13 @@
 | **总产品经理 / CEO** | 00 → 01 → 13 → 04 |
 | **PM** | 01 → 04 → 06 → 09 |
 | **设计师** | 04 → 05 |
-| **后端研发** | 02 → 03 → 11 → 12 → prompts/ |
-| **前端研发** | 02 → 04 → 05 → 11 → prompts/ |
-| **数据 PM** | 03 → 04 → 06 |
+| **后端研发** | 00-onboarding → 02 → 03 → 11 → 12 → 14-15 → prompts/ |
+| **前端研发** | 00-onboarding → 02 → 04 → 05 → 11 → 15 → prompts/ |
+| **数据 PM** | 03 → 04 → 06 → 08-decision |
 | **运营** | 06 → 07 → 09 |
-| **AI 工程师** | 07 → 08 → prompts/11-ai-assistant.md |
+| **AI 工程师** | 07 → 08 → 15 → prompts/11-ai-assistant.md |
+| **SRE / DevOps** | 02 → 14 → 15 → prompts/18-19 |
+| **新员工** | 00-onboarding 入门 → 按角色 |
 
 ## ✅ 落地执行流程
 
